@@ -2,7 +2,7 @@
 function App() {
   return (
     <>
-      <h1>Generate React Project</h1>
+      <h1 className='line-through'>Generate React Project</h1>
     </>
   );
 }
