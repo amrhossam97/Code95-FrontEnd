@@ -1,10 +1,16 @@
+import Routes from "./Routes";
+import { BrowserRouter as Router } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
     <>
-      <h1>Generate React Project</h1>
+      <div className='mx-20 my-9 text-gray-700'>
+      <Router>
+
+        <Routes />
+      </Router>
+      </div>
+      
     </>
   );
 }
-
-export default App;

@@ -1,0 +1,24 @@
+.btn-link{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    color: black;
+    border: 2px solid #292b2c;
+}
+.btn-link:hover{
+    background-color: #292b2c;
+    color: white;
+}
+.btn-add{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    color: black;
+    border: 2px solid #5cb85c;
+}
+.btn-add:hover{
+    background-color: #5cb85c;
+    color: white;
+}
