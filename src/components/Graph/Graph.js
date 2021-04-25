@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Graph.css";
 import AnyChart from "anychart-react";
 import { useEffect, useState } from "react";
-import { CSVLink, CSVDownload } from "react-csv";
+import { CSVLink } from "react-csv";
 
 export default function Graph() {
   const [result, setResult] = useState([]);
@@ -39,7 +39,7 @@ export default function Graph() {
   });
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/users")
+    fetch("https://code95-backend.herokuapp.com/api/users")
       .then((res) => res.json())
       .then(
         (result) => {
