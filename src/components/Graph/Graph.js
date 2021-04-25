@@ -6,7 +6,7 @@ import { CSVLink } from "react-csv";
 
 export default function Graph() {
   const [result, setResult] = useState([]);
-  const [headers, setheaders] = useState([
+  const [headers] = useState([
       {label: 'ID' , key:'_id'},
       {label: 'First Name' , key:'first_name'},
       {label: 'Last Name' , key:'last_name'},

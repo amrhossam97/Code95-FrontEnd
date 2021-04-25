@@ -19,13 +19,7 @@ export default function Home() {
 
   /* Get All Users */
   useEffect(()=>{
-    const requestOptions = {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Credentials' : 'true'}
-  };
-    fetch('https://code95-backend.herokuapp.com/api/users',requestOptions)
+    fetch('https://code95-backend.herokuapp.com/api/users')
     .then(res => res.json())
     .then(
         (result)=>{
@@ -86,9 +80,7 @@ export default function Home() {
     else{
       const requestOptions = {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': 'http://localhost:3000',
-        'Access-Control-Allow-Credentials' : 'true'},
+        headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify(query)
     };
     fetch('https://code95-backend.herokuapp.com/api/users/query', requestOptions)
